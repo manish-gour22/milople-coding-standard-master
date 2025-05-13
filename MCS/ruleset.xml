@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<ruleset name="MCS">
+  <description>Custom Coding Standard for Magento 2 Extensions Made by Milople</description>
+
+  <!-- File extensions to be checked. -->
+  <arg name="extensions" value="php,phtml"/>
+
+  <!-- Exclude minified JS files. -->
+  <exclude-pattern>*\.min\.js$</exclude-pattern>
+</ruleset>

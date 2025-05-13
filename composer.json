@@ -1,0 +1,29 @@
+{
+    "name": "faizanjaliyawala/milople-coding-standard",
+    "description": "Custom Coding Standard for Magento 2 Extensions Made by Milople",
+    "type": "phpcodesniffer-standard",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Faizan Jaliyawala",
+            "email": "faizanjaliyawala47@gmail.com"
+        }
+    ],
+    "keywords": [
+        "phpcs",
+        "standards",
+        "magento2"
+    ],
+    "require": {
+        "magento/magento-coding-standard": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "FaizanJaliyawala\\MilopleCodingStandard\\": "MCS/"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": "vendor/bin/phpcs --config-set installed_paths vendor/faizanjaliyawala/milople-coding-standard",
+        "post-update-cmd": "vendor/bin/phpcs --config-set installed_paths vendor/faizanjaliyawala/milople-coding-standard"
+    }
+}
